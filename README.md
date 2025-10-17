@@ -36,7 +36,7 @@ The app includes features such as login, registration, dashboard, and user manag
 ## 📸 App Demo
 
 Check out the demo and showcase post on LinkedIn:  
-🔗 [Demo SQLTraining on LinkedIn](https://www.linkedin.com/in/fauzanmaulana) <!-- Replace with your actual LinkedIn demo link -->
+🔗 [Demo SQLTraining on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7384891792393023488/) <!-- Replace with your actual LinkedIn demo link -->
 
 ---
 
