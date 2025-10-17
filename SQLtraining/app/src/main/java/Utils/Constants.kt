@@ -1,0 +1,4 @@
+package Utils
+
+class Constants {
+}

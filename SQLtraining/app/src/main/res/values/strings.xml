@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SQLTraining</string>
+    <string name="register_text">Don\'t have an account? <font color="#FFFFFF">Register</font></string> <!-- 🎨 Primary Palette -->
+</resources>

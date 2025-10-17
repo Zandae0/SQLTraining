@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- 🔹 LOGIN -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="UI.Login.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+    <!-- 🔹 REGISTER -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="UI.Register.RegisterFragment"
+        android:label="Register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <!-- 🔹 DASHBOARD -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="UI.Dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_UserControlFragment"
+            app:destination="@id/UserControlFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UserControlFragment"
+        android:name="UI.UserControl.UserControlFragment"
+        android:label="UserControl">
+    </fragment>
+</navigation>

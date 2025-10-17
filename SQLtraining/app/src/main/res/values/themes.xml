@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema utama aplikasi -->
+    <style name="Theme.SQLTraining" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna dasar -->
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorOnPrimary">@color/blue_primary_dark</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:colorBackground">@color/teal_700</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOutline">@color/white</item>
+
+        <!-- Warna teks global -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <!-- Terapkan style default ke TextInputLayout -->
+        <item name="textInputStyle">@style/CustomTextInputLayout</item>
+        <item name="materialAlertDialogTheme">@style/CustomAlertDialogTheme</item>
+    </style>
+
+    <!-- Tema untuk semua AlertDialog -->
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="buttonIconTint">@null</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="buttonBarPositiveButtonStyle">@style/CustomPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CustomNegativeButton</item>
+    </style>
+
+    <!-- Tombol Positive -->
+    <style name="CustomPositiveButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Tombol Negative -->
+    <style name="CustomNegativeButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!-- Default TextInputLayout Style -->
+    <style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="strokeColor">@color/white</item> <!-- garis putih -->
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+    </style>
+
+
+    <!-- Kalau mau override per komponen -->
+    <style name="TextInputTheme" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="strokeColor">@color/white</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <!-- Tema Khusus Dashboard -->
+    <style name="Theme.SQLTraining.Dashboard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna dasar dashboard -->
+        <item name="colorPrimary">#1F1F1F</item> <!-- abu-abu tua -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSecondary">#2C2C2C</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <!-- Warna aksen lembut (biru keabu-abuan) -->
+        <item name="colorTertiary">#4A90E2</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- Outline putih agar tetap kontras -->
+        <item name="colorOutline">@color/white</item>
+
+        <!-- Teks -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <!-- CardView & FAB -->
+        <item name="cardViewStyle">@style/DashboardCardStyle</item>
+        <item name="floatingActionButtonStyle">@style/DashboardFabStyle</item>
+    </style>
+
+    <!-- Style untuk CardView di Dashboard -->
+    <style name="DashboardCardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">#1E1E1E</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Style untuk Floating Action Button -->
+    <style name="DashboardFabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">#4A90E2</item> <!-- biru abu lembut -->
+        <item name="tint">@color/white</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+</resources>
+
